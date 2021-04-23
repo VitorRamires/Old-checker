@@ -13,45 +13,63 @@ var msg = document.getElementById('msg')
 if( Number(Nascimento.value) > anoAtual || Nascimento.value.length === 0){
         alert("Complete o campo corretamente")
 } else {
+
+
+    
     var idade = anoAtual - Number(Nascimento.value)
     var sex = document.getElementsByName('gender')
     var genero = ''
-    var criandoImagem = createElement('img')
-    criandoImagem.setAtribute('id','foto')
+    var imagem = document.createElement('img')
+    imagem.setAttribute('src','')
 
         if(sex[0].checked){
-           
-           var genero = 'homem'
+           var genero = 'Masculino'
             if(idade > 0 && idade <= 12){
                 //criança
-                criandoImagem.setAtribute('src', 'img/criança - homem.jpg')
+                msg.innerHTML = `Sou do genero ${genero} e tenho ${idade}`
+                imagem.setAttribute('src','img/criança-homem.jpg')
             } else if (idade > 12 && idade <= 25){
                 //jovem
+                msg.innerHTML = `Sou do genero ${genero} e tenho ${idade}`
+                imagem.setAttribute('src', 'img/jovem-homem.jpg')
             } else if (idade > 25 && idade <= 60){
                 //adulto
+                msg.innerHTML = `Sou do genero ${genero} e tenho ${idade}`
+                imagem.setAttribute('src', 'img/adulto-homem.jpg')
             } else {
                 // idoso
+                msg.innerHTML = `Sou do genero ${genero} e tenho ${idade}`
+                imagem.setAttribute('src', 'img/idoso-homem.jpg')
             }
 
 
         } else {
-          var genero = 'mulher'
+          var genero = 'Feminino'
             if(idade > 0 && idade <= 12){
                 //criança
+                msg.innerHTML = `Sou do genero ${genero} e tenho ${idade}`
+                imagem.setAttribute('src', 'img/criança-mulher.jpg')
             } else if (idade > 12 && idade <= 25){
                 //jovem
+                msg.innerHTML = `Sou do genero ${genero} e tenho ${idade}`
+                imagem.setAttribute('src', 'img/jovem-mulher.jpg') 
             } else if (idade > 25 && idade <= 60){
                 //adulto
+                msg.innerHTML = `Sou do genero ${genero} e tenho ${idade}`
+                imagem.setAttribute('src', 'img/adulto-mulher.jpg')
             } else {
                 //idoso
+                msg.innerHTML = `Sou do genero ${genero} e tenho ${idade}`
+                imagem.setAttribute('src', 'img/idosa-mulher.jpg')
             }
           
         }
-        
-        var mostrar = document.querySelector('.container-mostrar')
-        mostrar.appendChild(criandoImagem)
-    
+
+            msg.appendChild(imagem)
+            Nascimento.value = ""
+
     }
 
-
 }
+
+
