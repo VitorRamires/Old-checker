@@ -2,22 +2,73 @@
     padding:0;
     margin:0;
     box-sizing: border-box;
+    font-family: 'Balsamiq Sans', cursive;
 }
 
 .container-dados{
     float:left;
     width: 50%;
     height: 100vh;
-    background:red;
+    background:linear-gradient(100deg,rgb(9, 75, 255),rgb(10, 37, 110));
     text-align: center;
     padding:30px;
+    position: relative;
+}
+
+form{
+    position: absolute;
+    width: 85%;
+    height: 50%;
+    background:white;
+    top:55%;
+    transform: translateY(-55%);
+    padding:35px;
+    font-size:25px;
+    border-radius: 30px;
+}
+
+input[type="number"]{
+    width: 75%;
+    height: 55px;
+    padding:10px;
+    margin-top:10px;
+    border-radius:15px;
+    border:3px solid rgb(56, 54, 54);
+    outline: 0;
+    font-size:21px;
+}
+
+input[type="number"]:focus{
+    border:3px solid black;
+}
+
+input[type="button"]{
+    width: 170px;
+    height: 55px;
+    border-radius:15px;
+    border:3px solid white;
+    background:rgb(44, 90, 218);
+    color:white;
+    margin-top:35px;
+    font-size:22px;
+    cursor:pointer;
+}
+
+input[type="button"]:hover{
+    background:rgb(31, 63, 151);
+}
+
+input[type="radio"]{
+    width: 15px;
+    height: 15px;
+    
 }
 
 .container-mostrar{
     float:left;
     width: 50%;
     height: 100vh;
-    background:blue;
+    background:linear-gradient(-100deg,rgb(9, 75, 255),rgb(10, 37, 110));
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -40,10 +91,24 @@ margin-bottom:30px;
     margin-top:10px;
 }
 
-
 img{
-    width: 85%;
-    height: 85%;
-    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
     transition: 0.7s;
+ 
+    
+}
+
+.msg2{
+    width: 85%;
+    height: 65%;
+    border:25px solid white;
+    border-radius: 25px; 
+    box-shadow: 5px 5px 5px 5px rgba(19, 19, 19, 0.623);
+}
+
+#msg{
+    margin-bottom:15px;
+    color:white;
 }
