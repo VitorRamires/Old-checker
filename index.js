@@ -10,7 +10,6 @@ var msg2 = document.querySelector('.msg2')
 
 
 
-
 //tratamento de erro
 if( Number(Nascimento.value) > anoAtual || Nascimento.value.length === 0){
         alert("Complete o campo corretamente")
@@ -88,8 +87,8 @@ if( Number(Nascimento.value) > anoAtual || Nascimento.value.length === 0){
         }
        
         msg2.innerHTML=""
-        msg2.appendChild(imagem)
         Nascimento.value = ""
+        msg2.appendChild(imagem)
 
         }
 
