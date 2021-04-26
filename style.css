@@ -18,7 +18,6 @@
 form{
     position: absolute;
     width: 85%;
-    height: 50%;
     background:white;
     top:55%;
     transform: translateY(-55%);
@@ -101,14 +100,92 @@ img{
 }
 
 .msg2{
-    width: 85%;
-    height: 65%;
+    max-width: 750px;
+    height:550px;
     border:25px solid white;
     border-radius: 25px; 
     box-shadow: 5px 5px 5px 5px rgba(19, 19, 19, 0.623);
+    margin-right:35px;
 }
 
 #msg{
     margin-bottom:15px;
     color:white;
+}
+
+
+@media screen and (max-width:1430px){
+    .msg2{
+        height:500px;
+     
+    }
+    
+}
+
+@media screen and (max-width:1230px){
+    .msg2{
+        height:450px;
+     
+    }
+    
+}
+
+@media screen and (max-width:1030px){
+    .msg2{
+        height:400px;
+     
+    }
+    
+}
+
+
+@media screen and (max-width:950px){
+    .container-dados{
+        height: 350px;
+        width: 100%;
+        background:linear-gradient(180deg,rgb(9, 75, 255),rgb(10, 37, 110));
+    }
+
+    form{
+        top:30px;
+        left:50%;
+        transform: translateY(0);
+        transform: translateX(-50%);
+    }
+
+    .msg2{
+        height: 500px;
+        margin:0 auto;
+        margin:0 5px 0 5px;
+    }
+
+    .container-mostrar{
+        width: 100%;
+        background:linear-gradient(0deg,rgb(9, 75, 255),rgb(10, 37, 110));
+    }
+
+}
+
+@media screen and (max-width:730px){
+    .msg2{
+        height:450px;
+     
+    }
+    
+}
+
+@media screen and (max-width:600px){
+    .msg2{
+        height:400px;
+     
+    }
+    
+}
+
+@media screen and (max-width:380px){
+    .msg2{
+        height:300px;
+     
+    }
+    
 }

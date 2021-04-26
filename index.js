@@ -79,7 +79,7 @@ if( Number(Nascimento.value) > anoAtual || Nascimento.value.length === 0){
                 imagem.setAttribute('src', 'img/idosa-mulher.jpg')
             }
 
-            msg.innerHTML = `Eu tenho ${idade} e sou do genero ${genero}`
+            msg.innerHTML = `Eu tenho ${idade} anos e sou do genero ${genero}`
         }
 
 
