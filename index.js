@@ -1,8 +1,4 @@
 
-
-
-
-
 function Verificar(){
     
     var ano = new Date()
