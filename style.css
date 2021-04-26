@@ -101,6 +101,7 @@ img{
 
 .msg2{
     max-width: 750px;
+    width: 100%;
     height:550px;
     border:25px solid white;
     border-radius: 25px; 
