@@ -73,6 +73,7 @@ input[type="radio"]{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding:35px;
 }
 
 .nascimento{
@@ -103,7 +104,7 @@ img{
     max-width: 750px;
     width: 100%;
     height:550px;
-    border:25px solid white;
+    border:15px solid white;
     border-radius: 25px; 
     box-shadow: 5px 5px 5px 5px rgba(19, 19, 19, 0.623);
     margin-right:35px;
@@ -172,6 +173,12 @@ img{
         width: 100%;
         background:linear-gradient(0deg,rgb(9, 75, 255),rgb(10, 37, 110));
        
+    }
+
+    #msg{
+        margin-bottom:15px;
+        color:white;
+        margin-top:35px;
     }
 
 }
