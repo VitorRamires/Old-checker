@@ -65,6 +65,7 @@ background:rgb(105, 7, 170);
 input[type="radio"]{
 width: 15px;
 height: 15px;
+cursor: pointer;
     
 }
 
