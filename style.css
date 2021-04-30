@@ -1,87 +1,84 @@
 *{
-    padding:0;
-    margin:0;
-    box-sizing: border-box;
-    font-family: 'Balsamiq Sans', cursive;
+padding:0;
+margin:0;
+box-sizing: border-box;
+font-family: 'Balsamiq Sans', cursive;
 }
 
-.container-dados{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    float:left;
-    width: 50%;
-    height: 100vh;
-    background:linear-gradient(100deg,rgb(9, 75, 255),rgb(10, 37, 110));
-    text-align: center;
-    padding:30px;
-    position: relative;
-}
 
+body{
+position: relative;
+}
 
 form{
-    position: absolute;
-    width: 85%;
-    background:white;
-    top:55%;
-    transform: translateY(-55%);
-    padding:35px;
-    font-size:25px;
-    border-radius: 30px;
+max-width: 950px;
+width: 100%;
+background:white;
+color:white;
+padding:35px;
+font-size:25px;
+background:linear-gradient(155deg, rgb(179, 89, 240),rgb(145, 15, 231));
+margin:0 auto;
+padding-bottom:150px;
+text-align: center;
+border-radius: 0 0 150px 150px;
+transition: 0.8s;
 }
 
+.grow{
+    padding-bottom:405px;
+    transition: 0.8s;
+
+}
 
 input[type="number"]{
-    width: 75%;
-    height: 55px;
-    padding:10px;
-    margin-top:10px;
-    border-radius:15px;
-    border:3px solid rgb(56, 54, 54);
-    outline: 0;
-    font-size:21px;
+width: 75%;
+height: 55px;
+padding:10px;
+margin-top:10px;
+border-radius:15px;
+border:3px solid white;
+outline: 0;
+font-size:21px;
 }
 
 input[type="number"]:focus{
-    border:3px solid black;
+border:3px solid black;
 }
 
 input[type="button"]{
-    width: 170px;
-    height: 55px;
-    border-radius:15px;
-    border:3px solid white;
-    background:rgb(44, 90, 218);
-    color:white;
-    margin-top:35px;
-    font-size:22px;
-    cursor:pointer;
+width: 170px;
+height: 55px;
+border-radius:15px;
+border:3px solid white;
+background:rgb(179, 89, 240);
+color:white;
+margin-top:35px;
+font-size:22px;
+cursor:pointer;
 }
 
 input[type="button"]:hover{
-    background:rgb(31, 63, 151);
+background:rgb(105, 7, 170);
 }
 
 input[type="radio"]{
-    width: 15px;
-    height: 15px;
+width: 15px;
+height: 15px;
     
 }
 
 .container-mostrar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    float:left;
-    width: 50%;
-    height: 100vh;
-    background:linear-gradient(-100deg,rgb(9, 75, 255),rgb(10, 37, 110));
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding:35px;
+text-align: center;
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+/*background:linear-gradient(-100deg,rgb(9, 75, 255),rgb(10, 37, 110));*/
+background:white;
+padding:35px;
+
 }
 
 .nascimento{
@@ -89,161 +86,62 @@ margin-bottom:30px;
 }
 
 .genero{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-bottom:15px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding-bottom:15px;
 }
 
 .masculino, .feminino{
-    margin-top:10px;
+margin-top:10px;
 }
 
 img{
-    width: 100%;
-    height: 100%;
-    border-radius: 2px;
-    transition: 0.5s;
-    animation: roda-a-roda 2.5s 1;
-    opacity: 1;
-    border-radius: 15px;
-    background:white;
-}
-
-p::before{
-    width: 100px;
-    height: 100px;
-    background:red;
-    position: relative;
-    top:10px;
-    left:10px;
+width: 100%;
+border-radius: 10px 10px 5px 5px;
+height: 100%;
+transition: 0.8s;
+animation: roda-a-roda 2.5s 1;
+opacity: 1;
 }
 
 
 @keyframes roda-a-roda {
 from {
     opacity:0;
-    transition: 0.5s;
+    transition: 0.8s;
 }
 to{
     opacity: 1;
-    transition: 0.5s;
+    transition: 0.8s;
 }
 
 }
 
 .msg2{
-    max-width: 750px;
-    width: 100%;
-    height:550px;
-    border:15px solid white;
-    border-radius: 25px; 
-    box-shadow: 5px 5px 5px 5px rgba(19, 19, 19, 0.623);
-    margin-right:35px;
-    transition: 0.5s;
+max-width: 450px;
+width: 100%;
+height: 300px;
+border:15px solid white;
+border-radius: 25px; 
+transition: 0.8s;
+position: relative;
+top:0;
 }
 
+.msg2Dessapear{
+opacity: 0;
+transition: 0.8s;
+}
+
+.subir{
+top:-350px;
+opacity: 1;
+transition: 0.8s;
+}
 
 #msg{
-    margin-bottom:15px;
-    color:white;
+margin-top:25px;
+color:white;
 }
 
-
-@media screen and (max-width:1430px){
-    .msg2{
-        height:500px;
-        transition: 0.5s;
-     
-    }
-    
-}
-
-@media screen and (max-width:1230px){
-    .msg2{
-        height:450px;
-        transition: 0.5s;
-     
-    }
-    
-}
-
-@media screen and (max-width:1030px){
-    .msg2{
-        height:400px;
-        transition: 0.5s;
-     
-    }
-    
-}
-
-
-@media screen and (max-width:950px){
-    .container-dados{
-        height: 350px;
-        width: 100%;
-        background:linear-gradient(180deg,rgb(9, 75, 255),rgb(10, 37, 110));
-    
-    }
-
-    form{
-        top:30px;
-        left:50%;
-        transform: translateY(0);
-        transform: translateX(-50%);
-        transition: 0.5s;
-    }
-
-    .msg2{
-        height: 500px;
-        margin:0 auto;
-        margin:0 5px 0 5px;
-        border:15px solid white;
-        transition: 0.5s;
-    }
-
-    .container-mostrar{
-        width: 100%;
-        background:linear-gradient(0deg,rgb(9, 75, 255),rgb(10, 37, 110));
-       
-    }
-
-    #msg{
-        margin-bottom:15px;
-        color:white;
-        margin-top:35px;
-    }
-
-}
-
-@media screen and (max-width:730px){
-    .msg2{
-        height:450px;
-        transition: 0.5s;
-     
-    }
-    
-}
-
-@media screen and (max-width:600px){
-    .msg2{
-        height:400px;
-        transition: 0.5s;
-     
-    }
-
-    form{
-        width: 100%;
-        transition: 0.5s;
-    }
-    
-}
-
-@media screen and (max-width:380px){
-    .msg2{
-        height:300px;
-        transition: 0.5s;
-     
-    }
-    
-}

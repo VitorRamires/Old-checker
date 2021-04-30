@@ -12,9 +12,7 @@
 </head>
 <body>
     
-<div class="container-dados">
-
-<form>
+<form class="formulary">
     <div class="nascimento">
         <p>Ano de nascimento</p>
         <input type="number" id="ano">
@@ -30,15 +28,18 @@
         <input type="radio" name= "gender" id="Fem"> Feminino
          </div>
     </div>
-        <input type="button" value="Verificar" onclick="Verificar()"></button>
+        <input type="button" value="Verificar"  onclick="Verificar()"></button>
+        <input type="button" value="Limpar imagem" onclick="Limpar()"></button>
 </form>
 
-</div><!--dados-->
+
 
 <div class="container-mostrar">
 
-<h2 id = "msg">Preencha o campo</h2><!--mostrar-->
-<div class="msg2"></div>
+    <div class="msg2"></div>
+    <h2 id = "msg">Preencha o campo</h2><!--mostrar-->
+
+</div>
 
 
 <script src="index.js"></script>
