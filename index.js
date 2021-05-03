@@ -6,6 +6,7 @@
     var msg = document.getElementById('msg')
     var msg2 = document.querySelector('.msg2')
     var form = document.querySelector('.formulary')
+    var container = document.querySelector('.container-mostrar')
 
 
 
@@ -29,9 +30,8 @@ function Verificar(){
             msg.innerHTML = "Preencha corretamente!"
         
         } else {
-            form.classList.add("grow")
-            msg2.classList.add('subir')
-            msg2.style.opacity = "1"
+            form.classList.add("expanse_form")
+            container.classList.add("img_down")
            var genero = 'masculino'
             if(idade > 0 && idade <= 12){
                 //criança
@@ -55,9 +55,8 @@ function Verificar(){
                 msg.innerHTML = "Preencha corretamente!"
                 
             } else {
-                form.classList.add("grow")
-                msg2.classList.add('subir')
-                msg2.style.opacity = "1"
+            form.classList.add("expanse_form")
+            container.classList.add("img_down")
           var genero = 'feminino'
             if(idade > 0 && idade <= 12){
                 //criança
@@ -89,10 +88,7 @@ function Verificar(){
     
 }
 
-
-
 function Limpar(){
-    form.classList.remove("grow")
-     msg2.classList.remove('subir')
-     msg2.style.opacity = "0"
+    form.classList.remove("expanse_form")
+    container.classList.remove("img_down")
 }
