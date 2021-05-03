@@ -25,13 +25,17 @@ function Verificar(){
       
         if(sex[0].checked){
             
-        if(idade > 100 || idade < 0) {
+        if(idade > 100 || idade <= 0) {
             alert('Idade invalida')
             msg.innerHTML = "Preencha corretamente!"
-        
+            form.classList.remove("expanse_form")
+            container.classList.remove("img_down")
+            container.style.display = "none"
+
         } else {
             form.classList.add("expanse_form")
             container.classList.add("img_down")
+            container.style.display = "flex"
            var genero = 'masculino'
             if(idade > 0 && idade <= 12){
                 //criança
@@ -49,15 +53,20 @@ function Verificar(){
              msg.innerHTML = `Eu tenho ${idade} e sou do genero ${genero}` 
         }
 
-        } else  {
-            if(idade > 100 || idade < 0) {
+        } else if(sex[1].checked)  {
+            if(idade > 100 || idade <= 0) {
                 alert('Idade invalida!')
                 msg.innerHTML = "Preencha corretamente!"
+                form.classList.remove("expanse_form")
+                container.classList.remove("img_down")
+                container.style.display = "none"
                 
             } else {
             form.classList.add("expanse_form")
             container.classList.add("img_down")
-          var genero = 'feminino'
+            container.style.display = "flex"
+
+            var genero = 'feminino'
             if(idade > 0 && idade <= 12){
                 //criança
                 imagem.setAttribute('src', 'img/criança-mulher.jpg')
@@ -91,4 +100,5 @@ function Verificar(){
 function Limpar(){
     form.classList.remove("expanse_form")
     container.classList.remove("img_down")
+    container.style.display = "none"
 }

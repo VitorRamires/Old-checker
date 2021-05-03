@@ -10,6 +10,7 @@ form{
 position: relative;
 max-width: 950px;
 width: 100%;
+height: 55vh;
 background:white;
 color:white;
 padding:35px;
@@ -20,13 +21,12 @@ padding-bottom:100px;
 text-align: center;
 border-radius: 0 0 150px 150px;
 transition: 0.8s;
-overflow: hidden;
 }
 
-.expanse_form{
-    padding-bottom:465px;
-    transition: 0.8s;
 
+.expanse_form{
+    height:90vh;
+    transition: 0.8s;
 }
 
 input[type="number"]{
@@ -76,7 +76,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 /*background:linear-gradient(-100deg,rgb(9, 75, 255),rgb(10, 37, 110));*/
-padding:35px 0 0 45px;
+padding-top:45px;
 position: absolute;
 top:355px;
 left:0;
@@ -106,11 +106,12 @@ margin-top:10px;
 }
 
 img{
-width: 100%;
+width: 95%;
 border-radius: 20px;
 height: 100%;
 transition: 0.8s;
 animation: roda-a-roda 2.5s 1;
+border:5px solid white;
 opacity: 1;
 }
 
@@ -130,8 +131,8 @@ to{
 .msg2{
 max-width: 450px;
 width: 100%;
+height: 100%;
 height: 300px;
-border:5px solid white;
 border-radius: 25px; 
 transition: 0.8s;
 position: relative;
@@ -151,3 +152,24 @@ transition: 0.8s;
 
 
 
+@media screen and (max-width:540px){
+    form{
+    overflow-y:scroll;
+    border-radius: 0 0 50px 50px;
+    }
+
+    .expanse_form{
+        height:95vh;
+        transition: 0.8s;
+    }
+
+    #msg{
+    margin-bottom: 30px;;
+    }
+    
+    .container-mostrar{
+        height: 500px;
+        display: none;
+    }
+
+}
